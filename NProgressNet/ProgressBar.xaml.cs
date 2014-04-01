@@ -51,12 +51,12 @@ namespace NProgressNet
 		}
 		
 		private void NotifyPropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
+		{
+			if (PropertyChanged != null)
+			{
+				PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
 		
 		public void SetPercentage(int percent)
 		{
@@ -70,7 +70,7 @@ namespace NProgressNet
 			NotifyPropertyChanged("NewBarWidth");
 			NotifyPropertyChanged("NewBorderLeft");
 			
-        	sb.Completed += sb_Completed;
+			sb.Completed += sb_Completed;
 			sb.Begin(this, HandoffBehavior.Compose);
 		}
 		
